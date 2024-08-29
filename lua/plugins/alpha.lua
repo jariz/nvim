@@ -38,6 +38,7 @@ return {
         dashboard.button("c", " " .. " Config", LazyVim.pick.config_files()),
         -- dashboard.button("s", " " .. " Restore Session", [[<cmd> lua require("persistence").load() <cr>]]),
         -- dashboard.button("x", " " .. " Lazy Extras", "<cmd> LazyExtras <cr>"),
+        dashboard.button("s", "󰢹 " .. " Open remote", "<cmd> RemoteStart <cr>"),
         dashboard.button("l", "󰒲 " .. " Lazy", "<cmd> Lazy <cr>"),
         dashboard.button("p", " " .. " Recent Projects", function()
           local actions = require("telescope.actions")
