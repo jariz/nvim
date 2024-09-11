@@ -34,9 +34,13 @@ end
 vim.api.nvim_create_autocmd("BufWritePost", {
   callback = remove_unused_imports,
 })
--- vim.api.nvim_create_autocmd({ "DirChanged" }, {
---   callback = function()
---     -- Attempt to load the session for the new directory
---     require("persistence").load()
---   end,
+
+-- DISABLED, buggy
+--
+-- vim.api.nvim_create_autocmd("BufEnter", {
+--     pattern = "*",
+--     callback = function()
+--         vim.cmd("lcd " .. vim.fn.expand("%:p:h"))
+--     end,
+--     desc = "Set local working directory to file's directory"
 -- })
