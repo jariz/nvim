@@ -1,3 +1,11 @@
+## TODO
+
+- Find out why GQL doesn't work in TS/JS files
+- Find a way to stop nvim from changing the root dir (oh god why is this so hard)
+- Research a less painful way to fix merge conflicts
+- Make telescope search through hidden files but not node_modules
+
+
 # JARIVIM
 
 My ongoing attempt at making neovim my own.
