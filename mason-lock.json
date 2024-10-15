@@ -4,7 +4,6 @@
   "codelldb": "v1.10.0",
   "csharpier": "0.28.2",
   "css-lsp": "4.8.0",
-  "deno": "v1.40.2",
   "docker-compose-language-service": "0.2.0",
   "dockerfile-language-server": "0.13.0",
   "eslint-lsp": "4.10.0",
@@ -23,8 +22,8 @@
   "stylua": "v0.20.0",
   "tailwindcss-language-server": "0.0.18",
   "taplo": "0.8.1",
-  "typescript-language-server": "4.3.1",
-  "vtsls": "0.2.4",
-  "vue-language-server": "2.0.24",
+  "typescript-language-server": "4.3.3",
+  "vtsls": "0.2.6",
+  "vue-language-server": "2.1.6",
   "yaml-language-server": "1.15.0"
 }

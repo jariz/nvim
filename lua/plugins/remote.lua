@@ -1,10 +1,15 @@
 return {
-  "amitds1997/remote-nvim.nvim",
-  version = "*", -- Pin to GitHub releases
-  dependencies = {
-    "nvim-lua/plenary.nvim", -- For standard functions
-    "MunifTanjim/nui.nvim", -- To build the plugin UI
-    "nvim-telescope/telescope.nvim", -- For picking b/w different remote methods
+  "nosduco/remote-sshfs.nvim",
+  dependencies = { "nvim-telescope/telescope.nvim" },
+  opts = {
+    -- Refer to the configuration section below
+    -- or leave empty for defaults
+    ui = {
+      select_prompts = false, -- not yet implemented
+      confirm = {
+        connect = false, -- prompt y/n when host is selected to connect to
+        change_dir = false, -- prompt y/n to change working directory on connection (only applicable if handlers.on_connect.change_dir is enabled)
+      },
+    },
   },
-  config = true,
 }

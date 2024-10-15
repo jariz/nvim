@@ -1,3 +1,7 @@
+if true then
+  return {}
+end
+
 return {
   "git@github.com:adamwojt/project.nvim.git",
   -- lazy = false,
