@@ -1,12 +1,24 @@
 return {
   "nvim-telescope/telescope.nvim",
-  keys = {
-    -- { "<leader>/", LazyVim.pick("live_grep"), desc = "Grep (Root Dir)" },
-    -- { "<leader>:", "<cmd>Telescope command_history<cr>", desc = "Command History" },
-    -- {
-    --   "<leader><space>",
-    --   LazyVim.pick("find_files", { no_ignore = true, hidden = true }),
-    --   desc = "Find Files (Root Dir)",
-    -- },
+  dependencies = {
+    "nvim-lua/plenary.nvim",
   },
+  config = function()
+    local telescope = require("telescope")
+
+    telescope.setup({
+      ensure_installed = { "swift" },
+    })
+
+    -- set keymaps
+    local keymap = vim.keymap -- for conciseness
+
+    keymap.set(
+      "n",
+      "<leader>ff",
+      "<cmd>Telescope find_files theme=dropdown previewer=false<cr>",
+      { desc = "Fuzzy find files in cwd" }
+    )
+    keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", { desc = "Live grep in cwd" })
+  end,
 }

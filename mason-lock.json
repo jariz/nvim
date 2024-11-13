@@ -19,6 +19,7 @@
   "netcoredbg": "3.1.1-1042",
   "omnisharp": "v1.39.12",
   "prettier": "3.3.3",
+  "shellcheck": "v0.10.0",
   "shfmt": "v3.10.0",
   "stylua": "v0.20.0",
   "tailwindcss-language-server": "0.0.25",
