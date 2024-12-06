@@ -7,5 +7,4 @@ vim.opt.relativenumber = true
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 vim.opt.autochdir = false
-vim.opt.virtualedit = "onemore"
 vim.g.root_spec = { "cwd" }
