@@ -1,3 +1,3 @@
 return {
-  "git@gitlab.com:HiPhish/rainbow-delimiters.nvim.git",
+  "https://gitlab.com/HiPhish/rainbow-delimiters.nvim.git",
 }
