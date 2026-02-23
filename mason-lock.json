@@ -11,6 +11,7 @@
   "markdownlint-cli2": "0.17.2",
   "marksman": "2024-12-18",
   "prettier": "3.5.2",
+  "prisma-language-server": "6.4.1",
   "shellcheck": "v0.10.0",
   "shfmt": "v3.10.0",
   "stylua": "v2.0.2",
